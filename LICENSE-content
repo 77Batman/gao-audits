@@ -1,0 +1,20 @@
+Copyright (c) 2026. All rights reserved.
+
+Applies to: template-audit-2026-08.md, METHODS.md, README.md,
+exhibits/, and evidence/.
+
+These materials are published for reading, citation, and verification.
+
+PERMITTED WITHOUT REQUEST:
+  - Quoting excerpts with attribution and a link to this repository.
+  - Linking to any file here.
+  - Running the verification procedure in evidence/ and publishing your result,
+    including a result that contradicts ours.
+
+NOT PERMITTED WITHOUT PERMISSION:
+  - Wholesale reproduction or republication of the article or exhibits.
+  - Redistribution as your own work, or as training data for redistributed models.
+
+SEPARATELY LICENSED:
+  The checklist/ directory is licensed CC BY 4.0 and is exempt from the
+  restrictions above. See checklist/LICENSE.
