@@ -313,9 +313,9 @@ inherits the ceiling of what the system records. No amount of downstream rigour 
 skip the engine never wrote — the identity tells you a gap exists, and only the engine can
 tell you what fell into it.
 
-*Raised in the n8n community forum discussion of the audit that produced this version, by a
-reader describing a workflow whose skipped branches wrote no step rows at all. Credited with
-thanks; named here only with their consent.*
+*Raised in the [n8n community forum discussion](https://community.n8n.io/t/i-audited-five-popular-library-templates-for-silent-failures-findings-evidence-and-a-cc-by-checklist/310738)
+of the audit that produced this version, by a reader describing a workflow whose skipped
+branches wrote no step rows at all. Credited with thanks; named here only with their consent.*
 
 ---
 
