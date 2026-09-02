@@ -285,6 +285,38 @@ cannot carry a slate.
 - This version came from auditing public templates. Contact with real deployments will move
   it, and the checklist is versioned so those moves are visible.
 
+### The recorder's ceiling
+
+**Checks that read records inherit the completeness of the recorder. Where recording is in
+doubt, audit the accounting identity (`B2`), not the rows.**
+
+Nearly every check in this document has one shape: compare a claim against a record — a
+confirmation against the calendar write, a dashboard figure against the raw logs, a reported
+count against the items that entered. That shape has a floor it cannot see below. **If a
+step declines to act and writes no row, there is no record to compare against, and a
+row-reading audit sees a clean database and reports nothing.**
+
+A run status of *completed* is a claim about the run. It is not a claim about coverage, and it
+says nothing at all about what the run declined to do. The same distinction the rest of this
+checklist draws between a request succeeding and the world changing applies one level lower:
+**a green run is a claim about execution, not about what execution skipped.**
+
+The defence that survives this is arithmetic rather than inspection, and it is why `B2` asks
+for a terminal accounting — *processed + failed + skipped = entered* — rather than for a list
+of processed items. **Make `skipped` a required term in that identity and a category that has
+never once been written stops being invisible: it appears as unexplained residue, because the
+arithmetic does not balance.** Rows can be absent without trace. A residue cannot hide.
+
+**This puts the obligation on the engine, not on the workflow author, and that is the honest
+statement of the limit: observability is a property of the writer, not the reader.** An audit
+inherits the ceiling of what the system records. No amount of downstream rigour recovers a
+skip the engine never wrote — the identity tells you a gap exists, and only the engine can
+tell you what fell into it.
+
+*Raised in the n8n community forum discussion of the audit that produced this version, by a
+reader describing a workflow whose skipped branches wrote no step rows at all. Credited with
+thanks; named here only with their consent.*
+
 ---
 
 *Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, adapt it,
